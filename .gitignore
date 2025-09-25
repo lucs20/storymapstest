@@ -41,3 +41,16 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# from example
+node_modules/
+dist/
+.pnpm-store/
+.env
+.vscode/
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+
+
