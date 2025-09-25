@@ -1,20 +1,1 @@
-version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - corepack enable
-        - corepack prepare pnpm@latest --activate
-        - pnpm config set store-dir .pnpm-store
-        - pnpm install
-    build:
-      commands:
-        - pnpm run build --if-present
-  artifacts:
-    baseDirectory: dist/storymapstest
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - .pnpm-store/**/*
-      - node_modules/**/*
+version: 1frontend:  phases:    preBuild:      commands:        - corepack enable        - corepack prepare pnpm@latest --activate        - pnpm config set store-dir .pnpm-store        - pnpm install    build:      commands:        - pnpm run build  artifacts:    baseDirectory: dist/storymapstest    files:      - '**/*'  cache:    paths:      - .pnpm-store/**/*      - node_modules/**/*
